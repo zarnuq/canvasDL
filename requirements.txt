@@ -1,0 +1,5 @@
+mcp>=2.3,<3
+requests>=2.32
+patchright>=1.52
+textual>=8
+html2text>=2024

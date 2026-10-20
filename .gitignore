@@ -1,0 +1,10 @@
+# Allowlist: only project source is ever committed. Sessions, screenshots,
+# downloaded course material and anything else stays local.
+*
+!.gitignore
+!*.py
+!requirements.txt
+!README.md
+!CLAUDE.md
+!LICENSE
+__pycache__/
