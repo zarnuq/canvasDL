@@ -75,6 +75,8 @@ def ensure_auth(ask=None) -> None:
 
 def login(ask=None, show: bool = False) -> None:
     """Sign in through Canvas -> Microsoft Entra SSO in headless Chromium, save cookies to STATE."""
+    if not BASE:
+        raise RuntimeError("set CANVAS_URL, e.g. export CANVAS_URL=https://school.instructure.com")
     from patchright.sync_api import sync_playwright
 
     def need(prompt: str, secret: bool = False) -> str:
